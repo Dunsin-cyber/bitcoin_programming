@@ -3,6 +3,7 @@ mod finite_element;
 mod exercise_3;
 mod finite_element_imp;
 mod exercise_4;
+mod exercise_5;
 
 use crate::finite_element::FiniteElement;
 
@@ -33,7 +34,14 @@ fn main() {
 
     //EXERCISE 4
     println!("--------------EXERCISE 4----------");
-    exercise_4::exercise_4()
+    exercise_4::exercise_4();
+
+
+
+    
+    //EXERCISE 5
+    println!("--------------EXERCISE 5----------");
+    exercise_5::exercise_5()
 
 
 
