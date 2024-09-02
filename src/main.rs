@@ -1,3 +1,5 @@
+mod exercise_2;
+
 
 #[derive(Clone)]
 struct FiniteElement {
@@ -43,5 +45,8 @@ fn main() {
     println!("Repr func called  for element_2 at {}", element_2.repr());
     println!("__Eq__ func called {}", element_1.__eq__(Option::Some(element_2.clone())));
     println!("__Ne__ func called {}", element_1.__ne__(Option::Some(element_2)));
+
+    
+    exercise_2::addition()
 
 }
