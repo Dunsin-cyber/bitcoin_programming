@@ -1,6 +1,5 @@
 
-use std::ops::Add;
-// use std::ops::Par
+use std::ops::{Add, Mul};
 
 use crate::finite_element::FiniteElement;
 
@@ -38,6 +37,4 @@ impl Add for FiniteElement {
         }
     }
 }
-
-//Exercise 3
 

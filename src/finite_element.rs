@@ -19,12 +19,11 @@ pub struct FiniteElement {
     }
 
   pub  fn __eq__ (&self, other: Option<FiniteElement>) -> bool {
-
-  if let Some(element) = other {
-    self.num == element.num && self.prime == element.prime
-  } else {
-    false
-}
+        if let Some(element) = other {
+          self.num == element.num && self.prime == element.prime
+        } else {
+          false
+      }
 }
 
 //Example 1
@@ -35,4 +34,10 @@ pub fn __ne__(&self, other:Option<FiniteElement>) -> bool {
         false
     }
  }
+
+pub fn pow(self, element:u32) -> Self {
+  let num = self.num.pow(element) % self.prime;
+
+  Self::new(num, self.prime)
+}
  }

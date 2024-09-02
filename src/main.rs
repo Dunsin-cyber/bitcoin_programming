@@ -6,7 +6,6 @@ mod exercise_4;
 mod exercise_5;
 mod exercise_6;
 
-use std::ops::Mul;
 
 use crate::finite_element::FiniteElement;
 
@@ -52,7 +51,19 @@ fn main() {
     let a = FiniteElement::new(3, 13);
     let b = FiniteElement::new(12, 13);
     let c = FiniteElement::new(10, 13);
-     println!("{}", a*b == c )
+     println!("{}", a*b == c );
+
+     
+     
+
+     //EXERCISE 7
+    println!("--------------EXERCISE 6----------");
+    let d = FiniteElement::new(3, 13);
+    let e = FiniteElement::new(8, 13);
+     println!("{}", d.pow(2) == e );
+
+     
+
 
 
 
