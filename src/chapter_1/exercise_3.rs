@@ -1,6 +1,6 @@
 use std::ops::Sub;
 
-use crate::{exercise_2, finite_element::FiniteElement};
+use crate::{chapter_1, finite_element::FiniteElement};
 
 
 impl Sub for FiniteElement {
@@ -11,7 +11,7 @@ impl Sub for FiniteElement {
             
         } else {
             let num = ((self.num as i32 - rhs.num as i32) % self.prime as i32) as i32;
-            let res = exercise_2::return_pos_result(num, self.prime as i32);
+            let res = chapter_1::exercise_2::return_pos_result(num, self.prime as i32);
             Self::new(res, self.prime)
         }
     }

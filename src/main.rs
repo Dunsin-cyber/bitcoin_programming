@@ -23,7 +23,7 @@ fn main() {
     let cc = element_1.clone() + element_2.clone();
     println!("testting Add {}", cc.repr() );
     println!("--------------EXERCISE 2----------");
-    exercise_2::addition();
+    chapter_1::exercise_2::addition();
 
     //EXERCISE 3
     println!("--------------EXERCISE 3----------");
@@ -33,14 +33,14 @@ fn main() {
 
     //EXERCISE 4
     println!("--------------EXERCISE 4----------");
-    exercise_4::exercise_4();
+    chapter_1::exercise_4::exercise_4();
 
 
 
     
     //EXERCISE 5
     println!("--------------EXERCISE 5----------");
-    exercise_5::exercise_5();
+    chapter_1::exercise_5::exercise_5();
 
 
      //EXERCISE 6
@@ -58,7 +58,12 @@ fn main() {
     // let d = FiniteElement::new(3, 13);
     // let e = FiniteElement::new(8, 13);
     //  println!("{}", d.pow(2) == e );
-    exercise_7::exercise_7()
+    chapter_1::exercise_7::exercise_7();
+
+
+     //EXERCISE 8
+     println!("--------------EXERCISE 8----------");
+     chapter_1::exercise_8::exercise_8()
 
      
 
