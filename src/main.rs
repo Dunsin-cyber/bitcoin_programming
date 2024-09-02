@@ -1,11 +1,7 @@
-mod exercise_2;
 mod finite_element;
-mod exercise_3;
 mod finite_element_imp;
-mod exercise_4;
-mod exercise_5;
-mod exercise_6;
-mod exercise_7;
+mod chapter_1;
+
 
 
 use crate::finite_element::FiniteElement;
