@@ -7,7 +7,7 @@ impl Sub for FiniteElement {
     type Output = Self;
     fn sub(self, rhs: Self) -> Self::Output {
         if self.prime != rhs.prime {
-            panic!("'Cannot subtract two numbers in different Fields");
+            panic!("Cannot subtract two numbers in different Fields");
             
         } else {
             let num = ((self.num as i32 - rhs.num as i32) % self.prime as i32) as i32;
