@@ -63,9 +63,15 @@ fn main() {
 
      //EXERCISE 8
      println!("--------------EXERCISE 8----------");
-     chapter_1::exercise_8::exercise_8()
+     chapter_1::exercise_8::exercise_8();
 
      
+      //EXERCISE 9
+      println!("--------------EXERCISE 9----------");
+      let x = FiniteElement::new(3, 31);
+      let y = FiniteElement::new(1, 31);
+      let z = FiniteElement::new(4, 31);
+      println!("{}", x/y == z );
 
 
 

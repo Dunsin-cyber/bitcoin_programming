@@ -1,5 +1,5 @@
 
-use std::ops::{Add, Mul};
+use std::ops::Add;
 
 use crate::finite_element::FiniteElement;
 
