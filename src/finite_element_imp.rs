@@ -15,9 +15,13 @@ impl PartialEq for FiniteElement {
         }
     }
 
-    // fn ne(&self, other: &Self) -> bool {
-        
-    // }
+    fn ne(&self, other: &Self) -> bool {
+        if  self.num != other.num && self.prime != other.prime {
+            true           
+      } else {
+        false
+    }
+    }
 }
 
 
