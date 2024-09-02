@@ -5,6 +5,7 @@ mod finite_element_imp;
 mod exercise_4;
 mod exercise_5;
 mod exercise_6;
+mod exercise_7;
 
 
 use crate::finite_element::FiniteElement;
@@ -57,10 +58,11 @@ fn main() {
      
 
      //EXERCISE 7
-    println!("--------------EXERCISE 6----------");
-    let d = FiniteElement::new(3, 13);
-    let e = FiniteElement::new(8, 13);
-     println!("{}", d.pow(2) == e );
+    println!("--------------EXERCISE 7----------");
+    // let d = FiniteElement::new(3, 13);
+    // let e = FiniteElement::new(8, 13);
+    //  println!("{}", d.pow(2) == e );
+    exercise_7::exercise_7()
 
      
 
