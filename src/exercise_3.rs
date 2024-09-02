@@ -1,20 +1,20 @@
 
-use crate::finite_element::FiniteElement;
+use std::ops::Sub;
+
+use crate::{exercise_2, finite_element::FiniteElement};
 
 
-// imp add for FiniteElement {
-
-
-//     type Output = self;
-//     fn add () {
-
-//         if self.prime != other.prime {
-//             panic!("'Cannot add two numbers in different Fields");
+impl Sub for FiniteElement {
+    type Output = Self;
+    fn sub(self, rhs: Self) -> Self::Output {
+        if self.prime != rhs.prime {
+            panic!("'Cannot subtract two numbers in different Fields");
             
-//         } else {
-//             self.num = (self.num + other.num) % self.prime;
-//             // let res = exercise_2::return_pos_result(self.num, self.prime);
-//             Self {self.num, self.prime}
-//         }
-//     }
-// }
+        } else {
+            let num = ((self.num as i32 - rhs.num as i32) % self.prime as i32) as i32;
+            let res = exercise_2::return_pos_result(num, self.prime as i32);
+            Self::new(res, self.prime)
+        }
+    }
+
+}

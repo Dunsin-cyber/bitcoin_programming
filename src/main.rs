@@ -18,7 +18,12 @@ fn main() {
     println!("Repr func called  for element_1 at {}", element_1.repr());
     println!("Repr func called  for element_2 at {}", element_2.repr());
     println!("__Eq__ func called {}", element_1.__eq__(Option::Some(element_2.clone())));
-    println!("__Ne__ func called {}", element_1.__ne__(Option::Some(element_2)));
+    println!("testting eq {}", element_1 == element_2.clone());
+    let cc = element_1.clone() + element_2.clone();
+    println!("testting Add {}", cc.repr() );
+    let ccc = element_2.clone() - element_1.clone();
+    println!("testting subtract {}", ccc.repr() );
+
 
 
     exercise_2::addition()

@@ -1,6 +1,5 @@
 
-#[derive(Clone)]
-#[derive(PartialEq)]
+#[derive(Clone, PartialEq)]
 pub struct FiniteElement {
   pub  num:u32,
    pub prime: u32
