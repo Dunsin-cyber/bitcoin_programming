@@ -16,4 +16,14 @@ impl Point {
 
     }
 
+    /*  Exercise 2
+ Write the __ne__ method for Point. */
+    
+    pub fn __ne__(&self, x:i32, y:i32, a:i32, b:i32) -> bool {
+        if self.x != x || self.y != y || self.a != a || self.b != b  {
+           return true
+        } 
+        false
+    }
+
 }
