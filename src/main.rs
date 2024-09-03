@@ -75,5 +75,11 @@ fn main() {
 
 
 
+ //TESTING POWER FUNC
+      println!("--------------TESTING POWER FUNC----------");
+      let xx = FiniteElement::new(3, 5);
+      let xx_ =  xx.pow(3);  
+      println!("{}", xx_.repr() );
+      
 
 }

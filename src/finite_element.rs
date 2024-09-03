@@ -35,9 +35,17 @@ pub fn __ne__(&self, other:Option<FiniteElement>) -> bool {
     }
  }
 
-pub fn pow(self, element:u32) -> Self {
-  let num = self.num.pow(element) % self.prime;
+pub fn pow(self, element:i32) -> Self {
+  let n = element;
+  let num;
+  if element < 0 {
+    num = self.num.pow((self.prime as i32 + n - 1).try_into().unwrap() )  % self.prime;
+    return Self::new(num, self.prime)
+  } else {
 
-  Self::new(num, self.prime)
+    let num = self.num.pow(n as u32) % self.prime;
+    
+    Self::new(num, self.prime)
+  }
 }
  }
