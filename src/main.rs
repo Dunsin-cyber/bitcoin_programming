@@ -90,6 +90,10 @@ fn main() {
       println!("--------------CHAPTER 2----------");
 
       println!("--------------CHAPTER 2 EXERCISE 1----------");
-      chapter_2::exercise_1::exercise_1()
+      chapter_2::exercise_1::exercise_1();
+
+      println!("--------------CHAPTER 2 EXERCISE 2----------");
+      chapter_2::exercise_2::exercise_2();
+
 
 }
