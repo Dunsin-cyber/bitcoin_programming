@@ -1,7 +1,7 @@
 /*  
 Exercise 1
  Determine which of these points are on the curve y2 = x3 + 5x + 7:
- (2,4), (–1,–1), (18,77), (5,7
+ (2,4), (–1,–1), (18,77), (5,7)
 */
 use crate::chapter_2::point::Point;
 
