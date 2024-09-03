@@ -1,7 +1,7 @@
 mod finite_element;
 mod finite_element_imp;
 mod chapter_1;
-
+mod chapter_2;
 
 
 use crate::finite_element::FiniteElement;
@@ -10,7 +10,7 @@ use crate::finite_element::FiniteElement;
 
 
 
-
+//CHAPTER !
 fn main() {
     println!("Hello, world!");
     let element_1 = FiniteElement::new(7, 13);
@@ -81,5 +81,15 @@ fn main() {
       let xx_ =  xx.pow(3);  
       println!("{}", xx_.repr() );
       
+
+
+      println!("--------------CHAPTER 2----------");
+      println!("--------------CHAPTER 2----------");
+      println!("--------------CHAPTER 2----------");
+      println!("--------------CHAPTER 2----------");
+      println!("--------------CHAPTER 2----------");
+
+      println!("--------------CHAPTER 2 EXERCISE 1----------");
+      chapter_2::exercise_1::exercise_1()
 
 }
