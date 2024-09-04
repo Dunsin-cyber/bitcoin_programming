@@ -1,3 +1,5 @@
+use std::ops::Add;
+
 #[derive(Debug)]
 pub struct Point {
    pub x:Option<i32>,
@@ -35,4 +37,23 @@ impl Point {
         false
     }
 
+}
+
+
+impl Add for Point {
+    type Output = Self;
+    fn add(self, rhs: Point) -> Self::Output {
+        if self.a != rhs.a || self.b != rhs.b {
+            panic!("Points {:?}, {:?} are not on the same curve", self, rhs);
+        }
+
+        if self.x == None {
+            return rhs
+        }
+        if rhs.x == None {
+            return self
+        } else {
+            self
+        }
+    }
 }
