@@ -96,4 +96,8 @@ fn main() {
       chapter_2::exercise_2::exercise_2();
 
 
+      println!("--------------CHAPTER 2 EXERCISE 4----------");
+      chapter_2::exercise_4::exercise_4();
+
+
 }
