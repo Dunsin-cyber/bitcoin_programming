@@ -41,7 +41,7 @@ impl Point {
 
 
 impl Add for Point {
-    type Output = Self;
+    type Output = Point;
     fn add(self, rhs: Point) -> Self::Output {
         if self.a != rhs.a || self.b != rhs.b {
             panic!("Points {:?}, {:?} are not on the same curve", self, rhs);
@@ -52,8 +52,22 @@ impl Add for Point {
         }
         if rhs.x == None {
             return self
-        } else {
-            self
+        } 
+        if self.x == rhs.x && self.y != rhs.y {
+            return Point {
+                x: None,
+                y: None,
+                a: self.a,
+                b: self.b,
+            };
+        }
+        else {
+            return Point {
+                x: None,
+                y: None,
+                a: self.a,
+                b: self.b,
+            };
         }
     }
 }
