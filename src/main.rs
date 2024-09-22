@@ -5,6 +5,7 @@ mod chapter_2;
 
 
 use crate::finite_element::FiniteElement;
+use crate::chapter_1::exercise_2;
 
 
 
@@ -23,7 +24,7 @@ fn main() {
     let cc = element_1.clone() + element_2.clone();
     println!("testting Add {}", cc.repr() );
     println!("--------------EXERCISE 2----------");
-    chapter_1::exercise_2::addition();
+    exercise_2::addition();
 
     //EXERCISE 3
     println!("--------------EXERCISE 3----------");
